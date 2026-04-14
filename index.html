@@ -1,94 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jack Tarango - Buffness Expert</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    .container {
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 16px;
-    }
-    .button:hover {
-      background-color: #0056b3;
-    }
-    .dropdown {
-      margin-top: 30px;
-      text-align: left;
-    }
-    .dropdown-button {
-      background-color: #007BFF;
-      color: white;
-      padding: 10px 16px;
-      font-size: 16px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      width: 100%;
-      text-align: left;
-    }
-    .dropdown-button:hover {
-      background-color: #0056b3;
-    }
-    .dropdown-content {
-      display: none;
-      padding: 10px;
-      margin-top: 5px;
-      background-color: #f9f9f9;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Hi, I'm Jack Tarango</h1>
-    <p>I lift weights n stuff. Pay me to get buff.</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTFit</title>
+    <link rel="icon" href="./favicon.ico"/>
+    <link rel="stylesheet" href="./styles.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hi, I'm Jack Tarango</h1>
+      <p>I lift weights n stuff. Pay me to get buff.</p>
+      
+      <a href="https://venmo.com/Jack-Tarango-1" class="button" target="_blank">Send Me Money</a>
 
-    <img src="IMG_2131.jpeg" alt="Jack Flexing" style="width:300px; margin-top:20px;">
-    
-    <a href="https://venmo.com/Jack-Tarango-1" class="button" target="_blank">Send Me Money</a>
-
-    <div class="dropdown">
-      <button class="dropdown-button" onclick="toggleDropdown()">Fun fact about me</button>
-      <div id="dropdown-content" class="dropdown-content">
-        I can't walk past a mirror without flexing.
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown()">Fun fact about me</button>
+        <div id="dropdown-content" class="dropdown-content">
+          I can't walk past a mirror without flexing.
+        </div>
       </div>
     </div>
-  </div>
 
-  <script>
-    function toggleDropdown() {
-      const content = document.getElementById("dropdown-content");
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
+    <script>
+      function toggleDropdown() {
+        const content = document.getElementById("dropdown-content");
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
       }
-    }
-  </script>
-</body>
+    </script>
+  </body>
 </html>
